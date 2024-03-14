@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" onchange="myChange()" id="input">
+    <p id="output"></p>
+
+    <button id="myButton" onclick="myClick()">Click me</button>
+
+    <script>
+        myClick = ()=>{
+    alert("You clicked Successfully")
+    document.getElementById("myButton").style.display="none"
+}
+myChange = ()=>{
+    var inputValue = document.getElementById("input").value
+    var a = document.getElementById("output").innerText = inputValue
+    console.log(a)
+}
+       
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   <h2 id="heading">Javascript Arithmetic Calculator </h2>
+    <div id="flex">  
+        <div class="boxes">     
+            <h4>First Number</h4>
+            <input id="input1" onchange="check()" type="number">
+        </div>
+        <div class="boxes">
+            <h4>Operation</h4>
+            <select id="input2" onchange="check()">
+                <option value="" selected disabled>Operation</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </div>
+        <div class="boxes">
+            <h4>Second Number</h4>
+            <input id="input3" onchange="check()" type="number">
+        </div>
+        <div class="boxes">
+            <h4>Output</h4>
+            <input id="output" type="number" readonly placeholder="">
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

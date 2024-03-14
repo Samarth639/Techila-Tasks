@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(13, 224, 224);
+}
+
+.accordian{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+h1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+}
+.content{
+    padding-left: 20px;
+    padding-bottom: 2px;
+}
+
+.content{
+    display: none;
+}
+.icon{
+    padding-right: 15px;
+}

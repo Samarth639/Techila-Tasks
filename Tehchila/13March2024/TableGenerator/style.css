@@ -1,0 +1,27 @@
+#table{
+    border: 2px solid red;
+    width: 1000px;
+    border-radius: 10px;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#add{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#button{
+    color: burlywood;
+    background-color: chocolate;
+    border-color: black;
+    border-radius: 20px;
+    height: 20px;
+    width: 100px;
+}

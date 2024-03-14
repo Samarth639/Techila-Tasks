@@ -1,0 +1,17 @@
+.boxes{
+    float: left;
+    width: 25%;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+#flex{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
