@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+
+<form action="_blank">
+  <label>First name:</label><br>
+  <input class="inputs" onblur="myfun(event)" type="text"><br>
+  <label>Last name:</label><br>
+  <input class="inputs" onblur="myfun(event)" type="text"><br>
+  <label>Phone</label><br>
+  <input class="inputs" onblur="myfun(event)" type="text"><br>
+  <label>Email</label><br>
+  <input class="inputs" onblur="myfun(event)" type="text"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<script>
+    function myfun(event) {
+        var target = event.target;
+        console.log(target)
+        if (target.value === "") {
+            alert("Please enter a value in the input field ");
+            event.target.style.borderColor="Red";
+        }
+    }
+</script>
+
+</body>
+</html>

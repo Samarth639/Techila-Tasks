@@ -1,0 +1,3 @@
+clicked = ()=>{
+    console.log("Hii")
+}
