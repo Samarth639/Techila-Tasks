@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="UI">
+      <hr id="line" />
+      <div id="gola1" class="circle1">1</div>
+      <div id="gola2" class="circle2">2</div>
+    </div>
+
+    <div class="forms">
+      <div class="form1">
+        <form id="form" action="_blank">
+          <label for="input1">Name:</label><br />
+          <input id="input1" class="inputs inputsof1" type="text" /><br />
+
+          <label for="input2">Email:</label><br />
+          <input
+            id="input2"
+            class="inputs inputsof1"
+            onblur="validateEmail()"
+            type="text"
+          /><br />
+          <p id="email" style="display: none; color: red">
+            *Enter a valid email
+          </p>
+
+          <label for="input3">Phone:</label><br />
+          <input
+            id="input3"
+            class="inputs inputsof1"
+            onblur="validatePhone()"
+            type="text"
+          /><br />
+          <p id="phone">*Enter a valid phone number</p>
+
+          <label for="input4">Amount:</label><br />
+          <input id="input4" class="inputs inputsof1" type="text" /><br /><br />
+
+          <input onclick="validateForm1()" type="button" value="Next" />
+        </form>
+      </div>
+    </div>
+
+    <div class="forms">
+      <div class="form2">
+        <form id="form" action="_blank">
+          <label for="input1">Address</label><br />
+          <input id="input1" class="inputs" type="text" /><br />
+
+          <label for="input2">City</label><br />
+          <input 
+            id="input2"
+            class="inputs"
+            type="text"
+          /><br />
+          
+
+          <label for="input3">Pincode</label><br />
+                    <input
+                    id="input3"
+                    class="inputs"
+                    onblur="validatePhone()"
+                    type="text"
+                    /><br />
+                    <p id="phone">*Enter a valid phone number</p> 
+
+          <!-- <label for="input4">Amount:</label><br />
+          <input id="input4" class="inputs" type="text" /><br /><br /> -->
+
+          <input onclick="validateForm2()" type="button" value="Submit" />
+        </form>
+      </div>
+    </div> 
+  </body>
+</html>

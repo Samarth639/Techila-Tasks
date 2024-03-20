@@ -1,0 +1,102 @@
+body{
+ background-color: black;
+}
+.UI {
+    position: relative;
+    margin-bottom: 10px; 
+  }
+  hr#line {
+    position: relative;
+    border-radius: 10px;
+    margin-top: 42px;
+    border: 10px solid rgb(149, 113, 165, 0.75);
+    width: 100%;
+    z-index: 1; 
+  }
+  .circle1 {
+    border: 2px solid black;
+    position: fixed;
+    top: 10px; 
+    left: 33%; 
+    transform: translateX(-50%);
+    z-index: 2; 
+    background-color: yellow; 
+    width: 80px;
+    height: 80px; 
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .circle2 {
+    border: 2px solid black;
+    position: fixed;
+    top: 10px; 
+    right: 33%; 
+    z-index: 2; 
+    background-color: rgb(149, 113, 165, 0.98); 
+    width: 80px; 
+    height: 80px;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #form{
+    background-color: #8f448c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+  }
+  .inputs {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #email {
+    display: none;
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+  }
+ #email{
+    display: none;
+ }
+
+ #phone{
+  display: none;
+ }
+  
+ .form1{
+  margin-top: 100px;
+  margin-left: -87px;
+ }
+ .form2{
+  margin-top: 100px;
+  margin-left: -87px;
+ }
+
+ .forms{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+ }
+
+ .form2{
+  display: none;
+ }

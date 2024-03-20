@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="form" action="_blank">
+      <label for="input1">Name:</label><br />
+      <input id="input1" class="inputs" type="text" /><br />
+
+      <label for="input2">Email:</label><br />
+      <input
+        id="input2"
+        class="inputs"
+        onblur="validateEmail()"
+        type="text"
+      /><br />
+      <p id="email" style="display: none; color: red">*Enter a valid email</p>
+
+      <label for="input3">Phone:</label><br />
+      <input
+        id="input3"
+        class="inputs"
+        onblur="validatePhone()"
+        type="text"
+      /><br />
+      <p id="phone">*Enter a valid phone number</p>
+
+      <label for="input4">Amount:</label><br />
+      <input id="input4" class="inputs" type="text" /><br /><br />
+
+      <input onclick="validateForm()" type="button" value="Submit" />
+    </form>
+
+    <script>
+      function validateEmail() {
+        var emailInput = document.getElementById("input2");
+        var emailMessage = document.getElementById("email");
+        var email = emailInput.value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailRegex.test(email)) {
+          emailMessage.style.display = "none";
+        } else {
+          emailMessage.style.display = "block";
+        }
+      }
+
+      function validatePhone() {
+        var phoneInput = document.getElementById("input3");
+        var phoneMessage = document.getElementById("phone");
+        var phone = phoneInput.value;
+        var phoneRegex = /^\d+$/;
+
+        if (phoneRegex.test(phone)) {
+          phoneMessage.style.display = "none";
+        } else {
+          phoneMessage.style.display = "block";
+        }
+      }
+      function validateForm() {
+        var inputs = document.getElementsByClassName("inputs");
+        var valid = true;
+        for (var i = 0; i < inputs.length; i++) {
+          if (inputs[i].value === "") {
+            alert("All fields are compulsory!"); 
+            valid = false;
+            break;
+          }
+        }
+        if(!valid) {
+            var inputFields = document.getElementsByClassName("inputs");
+            for (var i = 0; i < inputs.length; i++){
+                inputFields[i].value = "";
+            }
+        }
+        console.log('valid'+valid);
+      }
+    </script>
+  </body>
+</html>
+
+ -->
+
