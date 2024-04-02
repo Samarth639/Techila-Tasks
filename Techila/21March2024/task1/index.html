@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <form id="form" action="_blank">
+      <label for="input1">Name:</label><br />
+      <input
+        name="name1"
+        onchange="saved(event)"
+        id="input1"
+        class="inputs"
+        type="text"
+      /><br />
+
+      <label for="input2">Email:</label><br />
+      <input
+        onchange="saved(event)"
+        id="input2"
+        name="name2"
+        class="inputs"
+        onblur="validateEmail()"
+        type="text"
+      /><br />
+      <p id="email" style="display: none; color: red">*Enter a valid email</p>
+
+      <label for="input3">Phone:</label><br />
+      <input
+        onchange="saved(event)"
+        id="input3"
+        name="name3"
+        class="inputs"
+        onblur="validatePhone()"
+        type="text"
+      /><br />
+      <p id="phone">*Enter a valid phone number</p>
+
+      <label for="input4">Amount:</label><br />
+      <input
+        onchange="saved(event)"
+        id="input4"
+        name="name4"
+        class="inputs"
+        type="text"
+      /><br /><br />
+
+      <input onclick="validateForm()" type="button" value="Submit" />
+    </form>
+  </body>
+</html>
+
+-->

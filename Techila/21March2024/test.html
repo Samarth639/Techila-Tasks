@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <input onchange="fun(event)" name = "name1" type="text">
+    <input onchange="fun(this)" name = "name2" type="text">
+    <input onchange="fun(this)" name = "name3" type="text">
+    <input onchange="fun(this)" name = "name4" type="text">
+
+    <script>
+        function fun(event){    
+            console.log(event)
+        }
+    </script>
+</body>
+</html>
